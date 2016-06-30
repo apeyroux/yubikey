@@ -1,0 +1,17 @@
+* links
+
+- [[https://developers.yubico.com/PGP/][Yubikey PGP]]
+- [[https://developers.yubico.com/PGP/Importing_keys.html][How to import PGP key]]
+- [[https://developers.yubico.com/PGP/Card_edit.htmlhttps://developers.yubico.com/PGP/Card_edit.html][Card edit]]
+
+* list secret keys
+
+#+BEGIN_SRC sh
+gpg2 --list-secret-keys
+#+END_SRC
+
+* reset gpg
+
+#+BEGIN_SRC sh
+gpg-connect-agent -r reset-yubi.scd
+#+END_SRC
